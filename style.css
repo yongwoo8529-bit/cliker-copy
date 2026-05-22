@@ -22,15 +22,31 @@ html {
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: var(--cream);
+    background-color: #e8ddd0;
     color: var(--navy);
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* 모바일 전용 래퍼 */
+.page-wrap {
+    width: 100%;
+    max-width: 430px;
+    background: var(--cream);
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
 /* ─── 히어로 ─── */
 .hero {
     position: relative;
-    min-height: 100vh;
+    height: 100svh;
+    min-height: 600px;
+    max-height: 780px;
     display: flex;
     align-items: flex-start;
     overflow: hidden;
@@ -53,14 +69,16 @@ body {
     position: absolute;
     inset: 0;
     background:
-        /* 하단 완전 차단 */
-        linear-gradient(to top, rgba(245, 237, 224, 1.0) 0%, rgba(245, 237, 224, 0) 42%),
-        /* 왼쪽 55%는 완전 불투명, 그 이후 여성 사진 노출 */
+        linear-gradient(to top,
+            rgba(245, 237, 224, 1.00) 0%,
+            rgba(245, 237, 224, 0.85) 22%,
+            rgba(245, 237, 224, 0.00) 44%
+        ),
         linear-gradient(to right,
             rgba(245, 237, 224, 1.00) 0%,
-            rgba(245, 237, 224, 1.00) 55%,
-            rgba(245, 237, 224, 0.55) 67%,
-            rgba(245, 237, 224, 0.10) 80%,
+            rgba(245, 237, 224, 1.00) 50%,
+            rgba(245, 237, 224, 0.60) 64%,
+            rgba(245, 237, 224, 0.15) 80%,
             rgba(245, 237, 224, 0.00) 92%
         );
 }
@@ -68,25 +86,26 @@ body {
 .hero-content {
     position: relative;
     z-index: 1;
-    max-width: 580px;
-    padding: 72px 48px 80px 56px;
+    width: 100%;
+    max-width: 248px;
+    padding: 48px 0 40px 22px;
 }
 
 .tag-line {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 0.82rem;
+    font-size: 0.70rem;
     font-weight: 400;
     color: var(--text-muted);
     letter-spacing: 0.02em;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
 }
 
 .tag-bar {
     display: inline-block;
-    width: 28px;
+    width: 20px;
     height: 1.5px;
     background: var(--gold);
     flex-shrink: 0;
@@ -94,30 +113,32 @@ body {
 
 .hero-sub-heading {
     font-family: 'Noto Serif KR', serif;
-    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-size: 1.25rem;
     font-weight: 500;
-    line-height: 1.55;
+    line-height: 1.6;
     color: var(--navy);
-    margin-bottom: 28px;
+    margin-bottom: 18px;
     letter-spacing: -0.01em;
+    word-break: keep-all;
 }
 
 .divider-line {
-    width: 200px;
+    width: 140px;
     height: 1px;
     background: linear-gradient(to right, var(--gold), transparent);
-    margin-bottom: 32px;
+    margin-bottom: 20px;
     opacity: 0.6;
 }
 
 .hero-heading {
     font-family: 'Noto Serif KR', serif;
-    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-size: 1.95rem;
     font-weight: 700;
-    line-height: 1.35;
+    line-height: 1.38;
     color: var(--navy);
     letter-spacing: -0.02em;
-    margin-bottom: 36px;
+    margin-bottom: 24px;
+    word-break: keep-all;
 }
 
 .accent-text {
@@ -125,10 +146,9 @@ body {
     color: var(--gold);
 }
 
-
 .hero-quote {
     display: flex;
-    gap: 14px;
+    gap: 11px;
     border: none;
 }
 
@@ -142,26 +162,31 @@ body {
 }
 
 .hero-quote p {
-    font-size: 0.95rem;
+    font-size: 0.80rem;
     font-weight: 400;
-    line-height: 1.85;
+    line-height: 1.9;
     color: var(--text-body);
+    word-break: keep-all;
 }
 
-/* ─── 특징 버튼 ─── */
+/* ─── 특징 카드 ─── */
 .features {
-    background: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(4px);
-    padding: 44px 32px;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(6px);
+    padding: 28px 14px;
+    margin: 0 12px;
+    border-radius: 20px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+    margin-top: -24px;
+    position: relative;
+    z-index: 2;
 }
 
 .features-inner {
-    max-width: 860px;
-    margin: 0 auto;
     display: flex;
     align-items: stretch;
     justify-content: space-between;
-    gap: 16px;
+    gap: 8px;
 }
 
 .feature-btn {
@@ -169,33 +194,29 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
-    padding: 36px 24px;
+    padding: 18px 8px 16px;
     background: var(--white);
-    border: 1.5px solid rgba(184, 137, 42, 0.25);
-    border-radius: 16px;
+    border: 1.5px solid rgba(184, 137, 42, 0.20);
+    border-radius: 14px;
     cursor: pointer;
     transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-}
-
-.feature-btn:hover {
-    background: #fffaf3;
-    border-color: var(--gold);
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(184, 137, 42, 0.15);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.04);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .feature-btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 3px 10px rgba(184, 137, 42, 0.1);
+    transform: scale(0.97);
+    background: #fffaf3;
+    border-color: var(--gold);
+    box-shadow: 0 3px 10px rgba(184, 137, 42, 0.12);
 }
 
 .feature-icon {
-    width: 52px;
-    height: 52px;
-    margin: 0 auto 16px;
+    width: 38px;
+    height: 38px;
+    margin: 0 auto 10px;
     color: var(--gold);
 }
 
@@ -206,123 +227,68 @@ body {
 
 .feature-title {
     font-family: 'Noto Serif KR', serif;
-    font-size: 1rem;
+    font-size: 0.78rem;
     font-weight: 600;
     color: var(--navy);
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     letter-spacing: -0.01em;
+    word-break: keep-all;
+    line-height: 1.4;
 }
 
 .feature-desc {
-    font-size: 0.82rem;
-    line-height: 1.7;
+    font-size: 0.66rem;
+    line-height: 1.65;
     color: var(--text-muted);
     font-weight: 400;
+    word-break: keep-all;
 }
 
 /* ─── CTA ─── */
 .cta {
     background: var(--cream);
     text-align: center;
-    padding: 48px 32px 64px;
+    padding: 32px 20px 52px;
 }
 
 .cta-text {
     font-family: 'Noto Serif KR', serif;
-    font-size: clamp(0.95rem, 2vw, 1.05rem);
+    font-size: 0.88rem;
     font-weight: 400;
-    line-height: 1.9;
+    line-height: 2.0;
     color: var(--text-body);
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+    word-break: keep-all;
 }
 
 .cta-heart {
     color: var(--gold);
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     opacity: 0.7;
 }
 
 .cta-btn {
-    display: inline-block;
+    display: block;
+    width: 100%;
     background: var(--navy);
     color: var(--white);
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 1.05rem;
+    font-size: 1.0rem;
     font-weight: 500;
     letter-spacing: 0.02em;
-    padding: 20px 52px;
-    border-radius: 10px;
+    padding: 19px 20px;
+    border-radius: 14px;
     border: none;
     text-decoration: none;
     cursor: pointer;
-    transition: background 0.25s ease, transform 0.15s ease, box-shadow 0.2s ease;
-    white-space: nowrap;
-    box-shadow: 0 4px 20px rgba(26, 39, 68, 0.3);
-}
-
-.cta-btn:hover {
-    background: var(--navy-light);
-    transform: translateY(-3px);
-    box-shadow: 0 8px 28px rgba(26, 39, 68, 0.35);
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+    text-align: center;
+    box-shadow: 0 4px 22px rgba(26, 39, 68, 0.32);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .cta-btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(26, 39, 68, 0.25);
-}
-
-/* ─── 반응형 ─── */
-@media (max-width: 900px) {
-    .hero-content {
-        padding: 56px 32px 64px 36px;
-        max-width: 500px;
-    }
-}
-
-@media (max-width: 680px) {
-    .hero {
-        min-height: auto;
-    }
-
-    .hero-img {
-        object-position: 70% top;
-    }
-
-    .hero-overlay {
-        background: linear-gradient(
-            to bottom,
-            rgba(245, 237, 224, 0.95) 0%,
-            rgba(245, 237, 224, 0.92) 60%,
-            rgba(245, 237, 224, 0.80) 100%
-        );
-    }
-
-    .hero-content {
-        padding: 48px 24px 56px 24px;
-        max-width: 100%;
-    }
-
-    .hero-heading {
-        font-size: 2.4rem;
-    }
-
-    .features-inner {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .feature-btn {
-        padding: 28px 20px;
-    }
-
-    .cta-btn {
-        font-size: 0.92rem;
-        padding: 16px 28px;
-    }
-}
-
-@media (max-width: 420px) {
-    .hero-heading {
-        font-size: 2rem;
-    }
+    transform: scale(0.98);
+    background: var(--navy-light);
+    box-shadow: 0 2px 12px rgba(26, 39, 68, 0.25);
 }
