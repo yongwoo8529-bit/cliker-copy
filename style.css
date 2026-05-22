@@ -96,11 +96,11 @@ body {
     align-items: center;
     gap: 8px;
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 0.70rem;
+    font-size: 0.62rem;
     font-weight: 400;
     color: var(--text-muted);
     letter-spacing: 0.02em;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .tag-bar {
@@ -113,11 +113,11 @@ body {
 
 .hero-sub-heading {
     font-family: 'Noto Serif KR', serif;
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     font-weight: 500;
     line-height: 1.6;
     color: var(--navy);
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     letter-spacing: -0.01em;
     word-break: keep-all;
 }
@@ -132,12 +132,12 @@ body {
 
 .hero-heading {
     font-family: 'Noto Serif KR', serif;
-    font-size: 1.95rem;
+    font-size: 1.65rem;
     font-weight: 700;
     line-height: 1.38;
     color: var(--navy);
     letter-spacing: -0.02em;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     word-break: keep-all;
 }
 
@@ -162,7 +162,7 @@ body {
 }
 
 .hero-quote p {
-    font-size: 0.80rem;
+    font-size: 0.72rem;
     font-weight: 400;
     line-height: 1.9;
     color: var(--text-body);
@@ -171,8 +171,7 @@ body {
 
 /* ─── 특징 카드 ─── */
 .features {
-    background: rgba(255, 255, 255, 0.80);
-    backdrop-filter: blur(6px);
+    background: #ffffff;
     padding: 28px 14px;
     margin: 0 12px;
     border-radius: 20px;
@@ -227,17 +226,17 @@ body {
 
 .feature-title {
     font-family: 'Noto Serif KR', serif;
-    font-size: 0.78rem;
+    font-size: 0.70rem;
     font-weight: 600;
     color: var(--navy);
-    margin-bottom: 7px;
+    margin-bottom: 6px;
     letter-spacing: -0.01em;
     word-break: keep-all;
     line-height: 1.4;
 }
 
 .feature-desc {
-    font-size: 0.66rem;
+    font-size: 0.60rem;
     line-height: 1.65;
     color: var(--text-muted);
     font-weight: 400;
@@ -253,7 +252,7 @@ body {
 
 .cta-text {
     font-family: 'Noto Serif KR', serif;
-    font-size: 0.88rem;
+    font-size: 0.78rem;
     font-weight: 400;
     line-height: 2.0;
     color: var(--text-body);
@@ -273,10 +272,10 @@ body {
     background: var(--navy);
     color: var(--white);
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 1.0rem;
+    font-size: 0.90rem;
     font-weight: 500;
     letter-spacing: 0.02em;
-    padding: 19px 20px;
+    padding: 17px 20px;
     border-radius: 14px;
     border: none;
     text-decoration: none;
