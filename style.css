@@ -43,52 +43,12 @@ body {
 
 /* ─── 히어로 ─── */
 .hero {
-    position: relative;
-    height: 100svh;
-    min-height: 600px;
-    max-height: 780px;
-    display: flex;
-    align-items: flex-start;
-    overflow: hidden;
-}
-
-.hero-bg {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-}
-
-.hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: right top;
-}
-
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background:
-        linear-gradient(to top,
-            rgba(245, 237, 224, 1.00) 0%,
-            rgba(245, 237, 224, 0.85) 22%,
-            rgba(245, 237, 224, 0.00) 44%
-        ),
-        linear-gradient(to right,
-            rgba(245, 237, 224, 1.00) 0%,
-            rgba(245, 237, 224, 1.00) 65%,
-            rgba(245, 237, 224, 0.55) 76%,
-            rgba(245, 237, 224, 0.10) 88%,
-            rgba(245, 237, 224, 0.00) 96%
-        );
+    background: var(--cream);
+    padding: 52px 24px 44px;
 }
 
 .hero-content {
-    position: relative;
-    z-index: 1;
     width: 100%;
-    max-width: 248px;
-    padding: 48px 0 40px 22px;
 }
 
 .tag-line {
