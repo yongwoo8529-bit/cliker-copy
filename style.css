@@ -252,6 +252,62 @@ body {
     box-shadow: 0 2px 12px rgba(26, 39, 68, 0.25);
 }
 
+/* ─── 안정적인 수익 구조 차트 일러스트 ─── */
+.inc-chart-wrap {
+    position: relative;
+    width: 100px;
+    height: 110px;
+    flex-shrink: 0;
+}
+
+.inc-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 68px;
+}
+
+.inc-bars {
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.inc-bar {
+    width: 14px;
+    background: linear-gradient(180deg, var(--gold-light) 0%, var(--gold) 100%);
+    border-radius: 3px 3px 0 0;
+    opacity: 0.85;
+}
+
+.inc-coin {
+    position: absolute;
+    bottom: 0;
+    right: 4px;
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.0rem;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(184, 137, 42, 0.40);
+}
+
+/* 3열 특징 그리드 */
+.inc-feat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
 /* ─── 전문적인 시스템 모달 ─── */
 .modal-overlay {
     position: fixed;
