@@ -106,6 +106,257 @@
         </a>
     </section>
 
+    <!-- 전문적인 시스템 모달 -->
+    <div class="modal-overlay" id="system-modal" aria-hidden="true">
+        <div class="modal-page">
+
+            <!-- 모달 헤더 -->
+            <div class="modal-topbar">
+                <button class="modal-back-btn" onclick="closeSystemModal()">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                        <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    뒤로
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <!-- 인트로 섹션 -->
+                <section class="sys-intro">
+                    <div class="sys-number-badge">01</div>
+                    <div class="sys-intro-inner">
+                        <div class="sys-intro-text">
+                            <h2 class="sys-main-title">
+                                초보자도 바로 실행하는<br>
+                                <em class="sys-accent">'전문적인 시스템'</em>
+                            </h2>
+                            <p class="sys-quote-text">"무엇을 해야 할지 모르는 막막함을 없앴습니다."</p>
+                        </div>
+                        <!-- 디바이스 일러스트 -->
+                        <div class="sys-device-wrap">
+                            <div class="sys-device">
+                                <div class="sys-device-screen">
+                                    <div class="sys-device-icons">
+                                        <span class="dev-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                                                <rect x="3" y="3" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                                                <path d="M4 7h16M4 11h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="dev-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                                                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+                                                <path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="currentColor"/>
+                                            </svg>
+                                        </span>
+                                        <span class="dev-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                                                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/>
+                                                <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="dev-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                                                <path d="M3 17l4-8 4 6 3-4 4 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M20 7l-3-3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="sys-device-stand"></div>
+                                <div class="sys-device-base"></div>
+                            </div>
+                            <div class="sys-notepad">
+                                <div class="sys-notepad-rings">
+                                    <span></span><span></span><span></span><span></span><span></span>
+                                </div>
+                                <div class="sys-notepad-lines">
+                                    <span></span><span></span><span></span><span></span>
+                                </div>
+                                <div class="sys-pen"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="sys-desc">
+                        복잡하고 어려운 과정 없이,<br>
+                        초보자도 로그인해서 바로 따라 할 수 있는<br>
+                        온·오프라인 매뉴얼을 제공합니다.
+                    </p>
+                    <p class="sys-desc">
+                        이미 검증된 SNS·블로그 활용법과<br>
+                        스마트한 도구들이 완벽하게 세팅되어 있어,<br>
+                        지시서대로 움직이기만 하면 되는<br>
+                        전문적인 인프라를 그대로 이식해 드립니다.
+                    </p>
+                </section>
+
+                <!-- 4대 특징 카드 -->
+                <section class="sys-feat-section">
+                    <div class="sys-feat-grid">
+                        <div class="sys-feat-card">
+                            <div class="sys-feat-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M7 8h10M7 12h6M7 16h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M17 14l1.5 1.5L21 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h4 class="sys-feat-title">온·오프라인 매뉴얼</h4>
+                            <p class="sys-feat-desc">처음부터 끝까지 단계별로<br>안내하는 상세 가이드</p>
+                        </div>
+                        <div class="sys-feat-card">
+                            <div class="sys-feat-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M2 20h20M8 17l4-6M12 11l4 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M10.5 9l3 2-3 2V9z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <h4 class="sys-feat-title">바로 실행 가능</h4>
+                            <p class="sys-feat-desc">로그인 후 지시서대로 따라하면<br>즉시 실행 가능</p>
+                        </div>
+                        <div class="sys-feat-card">
+                            <div class="sys-feat-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h4 class="sys-feat-title">완벽한 세팅</h4>
+                            <p class="sys-feat-desc">검증된 도구와 시스템이<br>완벽하게 준비</p>
+                        </div>
+                        <div class="sys-feat-card">
+                            <div class="sys-feat-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 17l4-5 4 3 4-6 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19 8l2 2-2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h4 class="sys-feat-title">성과로 연결</h4>
+                            <p class="sys-feat-desc">체계적인 실행으로<br>지속적인 성장과 성과 창출</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 파트너 섹션 -->
+                <section class="sys-partner-section">
+                    <div class="sys-partner-box">
+                        <div class="sys-partner-left">
+                            <p class="sys-partner-label">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="14" height="14" style="display:inline;vertical-align:middle;margin-right:4px;">
+                                    <path d="M9 11C9 11 9.5 13 12 13C14.5 13 15 11 15 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M7 8C7.5 7.5 8.5 7 9.5 7.5M15 7.5C16 7 17 7.5 17 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    <circle cx="12" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                                NEXT PARTNER WITH ME
+                            </p>
+                            <div class="sys-handshake-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 36l8-8 8 4 8-8 8 4 8-8 8 4 8-8" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20 28l-4 12 8 4 4-8" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M44 28l4 12-8 4-4-8" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M28 44l4 4 4-4" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <ellipse cx="32" cy="28" rx="10" ry="6" stroke="currentColor" stroke-width="3"/>
+                                </svg>
+                            </div>
+                            <h3 class="sys-partner-heading">"내가 한 방법이면<br>너도 할 수 있다."</h3>
+                            <p class="sys-partner-desc">
+                                평범했던 일상에 올바른 영양의 가치와<br>
+                                이 3가지 시스템이 더해지면,<br>
+                                생각지도 못했던 새로운 기회가 열립니다.<br>
+                                늘 열심히 살아온 당신의 노력이<br>
+                                온전한 보상으로 돌아오도록,<br>
+                                이번 달 50만 원의 추가 수입부터<br>
+                                그 이상의 성과까지 모든 과정을<br>
+                                <strong class="sys-highlight">1:1로 밀착 서포트</strong>하겠습니다.
+                            </p>
+                        </div>
+                        <div class="sys-partner-divider"></div>
+                        <div class="sys-partner-right">
+                            <h3 class="sys-cta-heading">"도대체 어떤 시스템인지<br>궁금하다면?"</h3>
+                            <p class="sys-cta-desc">
+                                망설이지 말고 지금 바로 노크하세요.<br>
+                                제가 직접 증명해 낸 방법 그대로<br>
+                                안내해 드립니다.
+                            </p>
+                            <button class="sys-cta-btn" onclick="closeSystemModal()">
+                                시스템 자세히 알아보기 &nbsp;→
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 이런 분들이라면 섹션 -->
+                <section class="sys-target-section">
+                    <h3 class="sys-target-title">
+                        <span class="sys-fire">🔥</span>
+                        이런 분들이라면 지금 당장 시작하세요!
+                    </h3>
+                    <ul class="sys-target-list">
+                        <li class="sys-target-item">
+                            <div class="sys-target-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="12" cy="10" rx="5" ry="6" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M15 14l1 4-4-1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <p>매달 월급 외에 <strong class="sys-highlight">안정적인 50만 원의 추가 수입</strong>이 절실하신 분</p>
+                        </li>
+                        <li class="sys-target-item">
+                            <div class="sys-target-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="4" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M8 20h8M12 18v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    <rect x="5" y="7" width="6" height="4" rx="1" stroke="currentColor" stroke-width="1.2"/>
+                                    <path d="M14 9h5M14 12h3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <p>스마트폰과 노트북만 있으면 <strong class="sys-highlight">언제 어디서든 일하는 환경</strong>을 만들고 싶으신 분</p>
+                        </li>
+                        <li class="sys-target-item">
+                            <div class="sys-target-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 17l4-5 4 3 4-7 4 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19 8l2 2-2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <p>내 가치를 높이면서 <strong class="sys-highlight">정직하고 지속 가능한 소득 구조</strong>를 갖고 싶으신 분</p>
+                        </li>
+                        <li class="sys-target-item">
+                            <div class="sys-target-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M9 4.5C9 4.5 10.5 3 12 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <p>"도대체 어떤 일이길래 가능할까?"라는 <strong class="sys-highlight">의문이 확신으로 바뀌는 경험</strong>을 해보고 싶으신 분</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- 하단 배너 -->
+                <div class="sys-bottom-banner">
+                    <div class="sys-banner-check">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M7 12l3.5 3.5L17 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p>
+                        복잡한 과정은 NO!&nbsp; 지시서대로만 움직이면 OK!<br>
+                        전문적인 시스템이 당신의 성공을 함께 만듭니다.
+                    </p>
+                </div>
+
+            </div><!-- /.modal-body -->
+        </div><!-- /.modal-page -->
+    </div><!-- /.modal-overlay -->
+
     <script src="script.js"></script>
 </div>
 </body>
