@@ -56,7 +56,7 @@ body {
     align-items: center;
     gap: 8px;
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 0.62rem;
+    font-size: 0.70rem;
     font-weight: 400;
     color: var(--text-muted);
     letter-spacing: 0.02em;
@@ -73,7 +73,7 @@ body {
 
 .hero-sub-heading {
     font-family: 'Noto Serif KR', serif;
-    font-size: 1.05rem;
+    font-size: 1.13rem;
     font-weight: 500;
     line-height: 1.6;
     color: var(--navy);
@@ -92,7 +92,7 @@ body {
 
 .hero-heading {
     font-family: 'Noto Serif KR', serif;
-    font-size: 1.65rem;
+    font-size: 1.78rem;
     font-weight: 700;
     line-height: 1.38;
     color: var(--navy);
@@ -122,7 +122,7 @@ body {
 }
 
 .hero-quote p {
-    font-size: 0.72rem;
+    font-size: 0.80rem;
     font-weight: 400;
     line-height: 1.9;
     color: var(--text-body);
@@ -186,7 +186,7 @@ body {
 
 .feature-title {
     font-family: 'Noto Serif KR', serif;
-    font-size: 0.70rem;
+    font-size: 0.78rem;
     font-weight: 600;
     color: var(--navy);
     margin-bottom: 6px;
@@ -196,7 +196,7 @@ body {
 }
 
 .feature-desc {
-    font-size: 0.60rem;
+    font-size: 0.68rem;
     line-height: 1.65;
     color: var(--text-muted);
     font-weight: 400;
@@ -212,7 +212,7 @@ body {
 
 .cta-text {
     font-family: 'Noto Serif KR', serif;
-    font-size: 0.78rem;
+    font-size: 0.86rem;
     font-weight: 400;
     line-height: 2.0;
     color: var(--text-body);
@@ -232,7 +232,7 @@ body {
     background: var(--navy);
     color: var(--white);
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 0.90rem;
+    font-size: 0.97rem;
     font-weight: 500;
     letter-spacing: 0.02em;
     padding: 17px 20px;
@@ -307,7 +307,7 @@ body {
     border: none;
     color: var(--navy);
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 0.82rem;
+    font-size: 0.88rem;
     font-weight: 500;
     cursor: pointer;
     padding: 6px 10px;
@@ -360,7 +360,7 @@ body {
 
 .sys-main-title {
     font-family: 'Noto Serif KR', serif;
-    font-size: 1.28rem;
+    font-size: 1.38rem;
     font-weight: 700;
     line-height: 1.45;
     color: var(--navy);
@@ -376,7 +376,7 @@ body {
 }
 
 .sys-quote-text {
-    font-size: 0.72rem;
+    font-size: 0.80rem;
     color: var(--text-muted);
     font-style: italic;
     line-height: 1.6;
@@ -508,7 +508,7 @@ body {
 }
 
 .sys-desc {
-    font-size: 0.73rem;
+    font-size: 0.82rem;
     line-height: 1.9;
     color: var(--text-body);
     word-break: keep-all;
@@ -552,7 +552,7 @@ body {
 
 .sys-feat-title {
     font-family: 'Noto Serif KR', serif;
-    font-size: 0.68rem;
+    font-size: 0.76rem;
     font-weight: 600;
     color: var(--navy);
     margin-bottom: 5px;
@@ -561,7 +561,7 @@ body {
 }
 
 .sys-feat-desc {
-    font-size: 0.60rem;
+    font-size: 0.68rem;
     color: var(--text-muted);
     line-height: 1.65;
     word-break: keep-all;
@@ -588,7 +588,7 @@ body {
 }
 
 .sys-partner-label {
-    font-size: 0.60rem;
+    font-size: 0.68rem;
     font-weight: 700;
     color: var(--gold);
     letter-spacing: 0.08em;
@@ -610,7 +610,7 @@ body {
 
 .sys-partner-heading {
     font-family: 'Noto Serif KR', serif;
-    font-size: 1.02rem;
+    font-size: 1.10rem;
     font-weight: 700;
     color: var(--navy);
     line-height: 1.45;
@@ -619,7 +619,7 @@ body {
 }
 
 .sys-partner-desc {
-    font-size: 0.72rem;
+    font-size: 0.80rem;
     line-height: 1.9;
     color: var(--text-body);
     word-break: keep-all;
@@ -644,7 +644,7 @@ body {
 
 .sys-cta-heading {
     font-family: 'Noto Serif KR', serif;
-    font-size: 0.98rem;
+    font-size: 1.06rem;
     font-weight: 700;
     color: var(--navy);
     line-height: 1.5;
@@ -653,7 +653,7 @@ body {
 }
 
 .sys-cta-desc {
-    font-size: 0.70rem;
+    font-size: 0.78rem;
     line-height: 1.85;
     color: var(--text-body);
     margin-bottom: 16px;
@@ -665,7 +665,7 @@ body {
     background: var(--gold);
     color: var(--white);
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 0.85rem;
+    font-size: 0.92rem;
     font-weight: 600;
     padding: 14px 16px;
     border-radius: 12px;
@@ -691,7 +691,7 @@ body {
 
 .sys-target-title {
     font-family: 'Noto Serif KR', serif;
-    font-size: 0.95rem;
+    font-size: 1.02rem;
     font-weight: 700;
     color: var(--navy);
     margin-bottom: 16px;
@@ -742,7 +742,7 @@ body {
 }
 
 .sys-target-item p {
-    font-size: 0.70rem;
+    font-size: 0.78rem;
     line-height: 1.8;
     color: var(--text-body);
     word-break: keep-all;
@@ -775,7 +775,7 @@ body {
 }
 
 .sys-bottom-banner p {
-    font-size: 0.70rem;
+    font-size: 0.78rem;
     line-height: 1.75;
     font-weight: 500;
     word-break: keep-all;
